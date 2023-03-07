@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "baseUrl": "src",
+    "rootDir": ".",
+    "outDir": "dist",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "target": "es2016",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "paths": { "*": ["*"] },
+    "sourceMap": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "useUnknownInCatchVariables": true,
+    "resolveJsonModule": true,
+  },
+  "include": [
+    "src/**/*",
+  ],
+  "exclude": ["node_modules"],
+  "ts-node": {
+    "transpileOnly": true,
+    "require": ["tsconfig-paths/register"]
+  }
+}
